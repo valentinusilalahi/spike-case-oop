@@ -17,7 +17,8 @@ public class Mobil extends Kendaraan {
 	 *  cek parkiran Mobil ada atau tidak
 	 * @return true
 	 */
-	public boolean cekKendaraanYangBisaParkir(TitikParkir spot){
-		return true;
+	public boolean cekKendaraanYangBisaParkir(TitikParkir titikParkir){
+		return titikParkir.getJenisKendaraan() == JenisKendaraan.MOBIL ||
+					   titikParkir.getJenisKendaraan() == JenisKendaraan.SEPEDAMOTOR;
 	}
 }

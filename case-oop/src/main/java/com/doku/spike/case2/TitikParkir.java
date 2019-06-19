@@ -1,5 +1,8 @@
 package com.doku.spike.case2;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * Created by IntelliJ IDEA.
  * User: valentinussilalahi
@@ -7,6 +10,8 @@ package com.doku.spike.case2;
  * Time: 15:21
  * To change this template use File | Settings | File and Code Templates.
  */
+@Getter
+@Setter
 public class TitikParkir {
 	private Kendaraan kendaraan;
 	private JenisKendaraan jenisKendaraan;
@@ -14,9 +19,6 @@ public class TitikParkir {
 	private int noParkiran;
 	private ParkirLevel parkirLevel;
 	
-	public int getBaris() { return baris; }
-	public int getNoParkiran() { return noParkiran; }
-
 	public TitikParkir(ParkirLevel lvl, int r, int n, JenisKendaraan s) {
 		jenisKendaraan = s;
 		parkirLevel = lvl;

@@ -50,12 +50,12 @@ public class ParkirLevel {
 
 	private boolean parkiranTersedia(int num, Kendaraan kendaraan) {
 		kendaraan.clearSpots();
-		boolean berhasil = true;
+		boolean success = true;
 		for(int i = num; i < num + kendaraan.spaceParkir; i++ ){
-			berhasil &= spots[i].park(kendaraan);
+			success &= spots[i].park(kendaraan);
 		}
 		parkirKosong -= kendaraan.spaceParkir;
-		return berhasil;
+		return success;
 	}
 
 	/* cari parkiran kendaraan.

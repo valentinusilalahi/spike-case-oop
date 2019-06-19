@@ -18,8 +18,8 @@ public class Bus extends Kendaraan {
 	 *  cek parkiran Bus ada atau tidak
 	 * @return true
 	 */
-	public boolean cekKendaraanYangBisaParkir(TitikParkir spot){
-		return true;
+	public boolean cekKendaraanYangBisaParkir(TitikParkir titikParkir){
+		return titikParkir.getJenisKendaraan() == JenisKendaraan.BUS;
 	}
 
 }
